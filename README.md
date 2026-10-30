@@ -88,9 +88,9 @@ The default configuration reads two modalities and a reference-label array:
 
 ### Input format
 
-Input files must contain at least two modalities measured on the same cells, with the same row order in every modality. Each matrix must have finite, nonnegative values and at least one variable feature.
+Input files must contain at least two modalities measured on the same cells.
 
 The loader supports:
 
 - Dense HDF5 datasets containing cell-by-feature matrices.
-- Sparse CSR or CSC groups containing `data`, `indices`, and `indptr`, together with a `shape` attribute. Set the `encoding-type` or `format` attribute to identify CSR or CSC storage; CSR is the default when neither attribute is present.
+
